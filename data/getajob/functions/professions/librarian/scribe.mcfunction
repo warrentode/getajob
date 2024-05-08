@@ -1,30 +1,120 @@
 #professions/librarian/scribe
-execute if block ~ ~ ~ minecraft:lectern[has_book=false] unless score @s getajob_cooldown matches 1.. run tag @s add getajob_scribed
-execute if entity @s[tag=getajob_scribed] run setblock ~ ~ ~ minecraft:lectern[has_book=true]
+execute if block ~ ~ ~ minecraft:lectern[facing=north,has_book=false] unless score @s getajob_cooldown matches 1.. run tag @s add getajob_scribed
+execute if entity @s[tag=getajob_scribed] run setblock ~ ~ ~ minecraft:lectern[facing=north,has_book=true]
 execute if entity @s[tag=getajob_scribed] run data merge block ~ ~ ~ {Book:{id:"minecraft:written_book",Count:1b,tag:{display:{Name:'{"text":"Unidentified Enchanted Book","color":"yellow","italic":false}',Lore:['{"text":"Open To Identify The Enchantment"}']},getajob_unidentifiedenchantmentbook:1b,title:"",author:"Villager",generation:3,pages:['{"text":"696969696969696969696969696969696969696969696969696969696969696969696","obfuscated":true}']}}}
 execute if entity @s[tag=getajob_scribed] run scoreboard players add @s getajob_cooldown 168000
 tag @s remove getajob_scribed
 
-execute if block ~1 ~ ~ minecraft:lectern[has_book=false] unless score @s getajob_cooldown matches 1.. run tag @s add getajob_scribed
-execute if entity @s[tag=getajob_scribed] run setblock ~1 ~ ~ minecraft:lectern[has_book=true]
+execute if block ~1 ~ ~ minecraft:lectern[facing=north,has_book=false] unless score @s getajob_cooldown matches 1.. run tag @s add getajob_scribed
+execute if entity @s[tag=getajob_scribed] run setblock ~1 ~ ~ minecraft:lectern[facing=north,has_book=true]
 execute if entity @s[tag=getajob_scribed] run data merge block ~1 ~ ~ {Book:{id:"minecraft:written_book",Count:1b,tag:{display:{Name:'{"text":"Unidentified Enchanted Book","color":"yellow","italic":false}',Lore:['{"text":"Open To Identify The Enchantment"}']},getajob_unidentifiedenchantmentbook:1b,title:"",author:"Villager",generation:3,pages:['{"text":"696969696969696969696969696969696969696969696969696969696969696969696","obfuscated":true}']}}}
 execute if entity @s[tag=getajob_scribed] run scoreboard players add @s getajob_cooldown 168000
 tag @s remove getajob_scribed
 
-execute if block ~-1 ~ ~ minecraft:lectern[has_book=false] unless score @s getajob_cooldown matches 1.. run tag @s add getajob_scribed
-execute if entity @s[tag=getajob_scribed] run setblock ~-1 ~ ~ minecraft:lectern[has_book=true]
+execute if block ~-1 ~ ~ minecraft:lectern[facing=north,has_book=false] unless score @s getajob_cooldown matches 1.. run tag @s add getajob_scribed
+execute if entity @s[tag=getajob_scribed] run setblock ~-1 ~ ~ minecraft:lectern[facing=north,has_book=true]
 execute if entity @s[tag=getajob_scribed] run data merge block ~-1 ~ ~ {Book:{id:"minecraft:written_book",Count:1b,tag:{display:{Name:'{"text":"Unidentified Enchanted Book","color":"yellow","italic":false}',Lore:['{"text":"Open To Identify The Enchantment"}']},getajob_unidentifiedenchantmentbook:1b,title:"",author:"Villager",generation:3,pages:['{"text":"696969696969696969696969696969696969696969696969696969696969696969696","obfuscated":true}']}}}
 execute if entity @s[tag=getajob_scribed] run scoreboard players add @s getajob_cooldown 168000
 tag @s remove getajob_scribed
 
-execute if block ~ ~ ~1 minecraft:lectern[has_book=false] unless score @s getajob_cooldown matches 1.. run tag @s add getajob_scribed
-execute if entity @s[tag=getajob_scribed] run setblock ~ ~ ~1 minecraft:lectern[has_book=true]
+execute if block ~ ~ ~1 minecraft:lectern[facing=north,has_book=false] unless score @s getajob_cooldown matches 1.. run tag @s add getajob_scribed
+execute if entity @s[tag=getajob_scribed] run setblock ~ ~ ~1 minecraft:lectern[facing=north,has_book=true]
 execute if entity @s[tag=getajob_scribed] run data merge block ~ ~ ~1 {Book:{id:"minecraft:written_book",Count:1b,tag:{display:{Name:'{"text":"Unidentified Enchanted Book","color":"yellow","italic":false}',Lore:['{"text":"Open To Identify The Enchantment"}']},getajob_unidentifiedenchantmentbook:1b,title:"",author:"Villager",generation:3,pages:['{"text":"696969696969696969696969696969696969696969696969696969696969696969696","obfuscated":true}']}}}
 execute if entity @s[tag=getajob_scribed] run scoreboard players add @s getajob_cooldown 168000
 tag @s remove getajob_scribed
 
-execute if block ~ ~ ~-1 minecraft:lectern[has_book=false] unless score @s getajob_cooldown matches 1.. run tag @s add getajob_scribed
-execute if entity @s[tag=getajob_scribed] run setblock ~ ~ ~-1 minecraft:lectern[has_book=true]
+execute if block ~ ~ ~-1 minecraft:lectern[facing=north,has_book=false] unless score @s getajob_cooldown matches 1.. run tag @s add getajob_scribed
+execute if entity @s[tag=getajob_scribed] run setblock ~ ~ ~-1 minecraft:lectern[facing=north,has_book=true]
+execute if entity @s[tag=getajob_scribed] run data merge block ~ ~ ~-1 {Book:{id:"minecraft:written_book",Count:1b,tag:{display:{Name:'{"text":"Unidentified Enchanted Book","color":"yellow","italic":false}',Lore:['{"text":"Open To Identify The Enchantment"}']},getajob_unidentifiedenchantmentbook:1b,title:"",author:"Villager",generation:3,pages:['{"text":"696969696969696969696969696969696969696969696969696969696969696969696","obfuscated":true}']}}}
+execute if entity @s[tag=getajob_scribed] run scoreboard players add @s getajob_cooldown 168000
+tag @s remove getajob_scribed
+
+execute if block ~ ~ ~ minecraft:lectern[facing=east,has_book=false] unless score @s getajob_cooldown matches 1.. run tag @s add getajob_scribed
+execute if entity @s[tag=getajob_scribed] run setblock ~ ~ ~ minecraft:lectern[facing=east,has_book=true]
+execute if entity @s[tag=getajob_scribed] run data merge block ~ ~ ~ {Book:{id:"minecraft:written_book",Count:1b,tag:{display:{Name:'{"text":"Unidentified Enchanted Book","color":"yellow","italic":false}',Lore:['{"text":"Open To Identify The Enchantment"}']},getajob_unidentifiedenchantmentbook:1b,title:"",author:"Villager",generation:3,pages:['{"text":"696969696969696969696969696969696969696969696969696969696969696969696","obfuscated":true}']}}}
+execute if entity @s[tag=getajob_scribed] run scoreboard players add @s getajob_cooldown 168000
+tag @s remove getajob_scribed
+
+execute if block ~1 ~ ~ minecraft:lectern[facing=east,has_book=false] unless score @s getajob_cooldown matches 1.. run tag @s add getajob_scribed
+execute if entity @s[tag=getajob_scribed] run setblock ~1 ~ ~ minecraft:lectern[facing=east,has_book=true]
+execute if entity @s[tag=getajob_scribed] run data merge block ~1 ~ ~ {Book:{id:"minecraft:written_book",Count:1b,tag:{display:{Name:'{"text":"Unidentified Enchanted Book","color":"yellow","italic":false}',Lore:['{"text":"Open To Identify The Enchantment"}']},getajob_unidentifiedenchantmentbook:1b,title:"",author:"Villager",generation:3,pages:['{"text":"696969696969696969696969696969696969696969696969696969696969696969696","obfuscated":true}']}}}
+execute if entity @s[tag=getajob_scribed] run scoreboard players add @s getajob_cooldown 168000
+tag @s remove getajob_scribed
+
+execute if block ~-1 ~ ~ minecraft:lectern[facing=east,has_book=false] unless score @s getajob_cooldown matches 1.. run tag @s add getajob_scribed
+execute if entity @s[tag=getajob_scribed] run setblock ~-1 ~ ~ minecraft:lectern[facing=east,has_book=true]
+execute if entity @s[tag=getajob_scribed] run data merge block ~-1 ~ ~ {Book:{id:"minecraft:written_book",Count:1b,tag:{display:{Name:'{"text":"Unidentified Enchanted Book","color":"yellow","italic":false}',Lore:['{"text":"Open To Identify The Enchantment"}']},getajob_unidentifiedenchantmentbook:1b,title:"",author:"Villager",generation:3,pages:['{"text":"696969696969696969696969696969696969696969696969696969696969696969696","obfuscated":true}']}}}
+execute if entity @s[tag=getajob_scribed] run scoreboard players add @s getajob_cooldown 168000
+tag @s remove getajob_scribed
+
+execute if block ~ ~ ~1 minecraft:lectern[facing=east,has_book=false] unless score @s getajob_cooldown matches 1.. run tag @s add getajob_scribed
+execute if entity @s[tag=getajob_scribed] run setblock ~ ~ ~1 minecraft:lectern[facing=east,has_book=true]
+execute if entity @s[tag=getajob_scribed] run data merge block ~ ~ ~1 {Book:{id:"minecraft:written_book",Count:1b,tag:{display:{Name:'{"text":"Unidentified Enchanted Book","color":"yellow","italic":false}',Lore:['{"text":"Open To Identify The Enchantment"}']},getajob_unidentifiedenchantmentbook:1b,title:"",author:"Villager",generation:3,pages:['{"text":"696969696969696969696969696969696969696969696969696969696969696969696","obfuscated":true}']}}}
+execute if entity @s[tag=getajob_scribed] run scoreboard players add @s getajob_cooldown 168000
+tag @s remove getajob_scribed
+
+execute if block ~ ~ ~-1 minecraft:lectern[facing=east,has_book=false] unless score @s getajob_cooldown matches 1.. run tag @s add getajob_scribed
+execute if entity @s[tag=getajob_scribed] run setblock ~ ~ ~-1 minecraft:lectern[facing=east,has_book=true]
+execute if entity @s[tag=getajob_scribed] run data merge block ~ ~ ~-1 {Book:{id:"minecraft:written_book",Count:1b,tag:{display:{Name:'{"text":"Unidentified Enchanted Book","color":"yellow","italic":false}',Lore:['{"text":"Open To Identify The Enchantment"}']},getajob_unidentifiedenchantmentbook:1b,title:"",author:"Villager",generation:3,pages:['{"text":"696969696969696969696969696969696969696969696969696969696969696969696","obfuscated":true}']}}}
+execute if entity @s[tag=getajob_scribed] run scoreboard players add @s getajob_cooldown 168000
+tag @s remove getajob_scribed
+
+execute if block ~ ~ ~ minecraft:lectern[facing=south,has_book=false] unless score @s getajob_cooldown matches 1.. run tag @s add getajob_scribed
+execute if entity @s[tag=getajob_scribed] run setblock ~ ~ ~ minecraft:lectern[facing=south,has_book=true]
+execute if entity @s[tag=getajob_scribed] run data merge block ~ ~ ~ {Book:{id:"minecraft:written_book",Count:1b,tag:{display:{Name:'{"text":"Unidentified Enchanted Book","color":"yellow","italic":false}',Lore:['{"text":"Open To Identify The Enchantment"}']},getajob_unidentifiedenchantmentbook:1b,title:"",author:"Villager",generation:3,pages:['{"text":"696969696969696969696969696969696969696969696969696969696969696969696","obfuscated":true}']}}}
+execute if entity @s[tag=getajob_scribed] run scoreboard players add @s getajob_cooldown 168000
+tag @s remove getajob_scribed
+
+execute if block ~1 ~ ~ minecraft:lectern[facing=south,has_book=false] unless score @s getajob_cooldown matches 1.. run tag @s add getajob_scribed
+execute if entity @s[tag=getajob_scribed] run setblock ~1 ~ ~ minecraft:lectern[facing=south,has_book=true]
+execute if entity @s[tag=getajob_scribed] run data merge block ~1 ~ ~ {Book:{id:"minecraft:written_book",Count:1b,tag:{display:{Name:'{"text":"Unidentified Enchanted Book","color":"yellow","italic":false}',Lore:['{"text":"Open To Identify The Enchantment"}']},getajob_unidentifiedenchantmentbook:1b,title:"",author:"Villager",generation:3,pages:['{"text":"696969696969696969696969696969696969696969696969696969696969696969696","obfuscated":true}']}}}
+execute if entity @s[tag=getajob_scribed] run scoreboard players add @s getajob_cooldown 168000
+tag @s remove getajob_scribed
+
+execute if block ~-1 ~ ~ minecraft:lectern[facing=south,has_book=false] unless score @s getajob_cooldown matches 1.. run tag @s add getajob_scribed
+execute if entity @s[tag=getajob_scribed] run setblock ~-1 ~ ~ minecraft:lectern[facing=south,has_book=true]
+execute if entity @s[tag=getajob_scribed] run data merge block ~-1 ~ ~ {Book:{id:"minecraft:written_book",Count:1b,tag:{display:{Name:'{"text":"Unidentified Enchanted Book","color":"yellow","italic":false}',Lore:['{"text":"Open To Identify The Enchantment"}']},getajob_unidentifiedenchantmentbook:1b,title:"",author:"Villager",generation:3,pages:['{"text":"696969696969696969696969696969696969696969696969696969696969696969696","obfuscated":true}']}}}
+execute if entity @s[tag=getajob_scribed] run scoreboard players add @s getajob_cooldown 168000
+tag @s remove getajob_scribed
+
+execute if block ~ ~ ~1 minecraft:lectern[facing=south,has_book=false] unless score @s getajob_cooldown matches 1.. run tag @s add getajob_scribed
+execute if entity @s[tag=getajob_scribed] run setblock ~ ~ ~1 minecraft:lectern[facing=south,has_book=true]
+execute if entity @s[tag=getajob_scribed] run data merge block ~ ~ ~1 {Book:{id:"minecraft:written_book",Count:1b,tag:{display:{Name:'{"text":"Unidentified Enchanted Book","color":"yellow","italic":false}',Lore:['{"text":"Open To Identify The Enchantment"}']},getajob_unidentifiedenchantmentbook:1b,title:"",author:"Villager",generation:3,pages:['{"text":"696969696969696969696969696969696969696969696969696969696969696969696","obfuscated":true}']}}}
+execute if entity @s[tag=getajob_scribed] run scoreboard players add @s getajob_cooldown 168000
+tag @s remove getajob_scribed
+
+execute if block ~ ~ ~-1 minecraft:lectern[facing=south,has_book=false] unless score @s getajob_cooldown matches 1.. run tag @s add getajob_scribed
+execute if entity @s[tag=getajob_scribed] run setblock ~ ~ ~-1 minecraft:lectern[facing=south,has_book=true]
+execute if entity @s[tag=getajob_scribed] run data merge block ~ ~ ~-1 {Book:{id:"minecraft:written_book",Count:1b,tag:{display:{Name:'{"text":"Unidentified Enchanted Book","color":"yellow","italic":false}',Lore:['{"text":"Open To Identify The Enchantment"}']},getajob_unidentifiedenchantmentbook:1b,title:"",author:"Villager",generation:3,pages:['{"text":"696969696969696969696969696969696969696969696969696969696969696969696","obfuscated":true}']}}}
+execute if entity @s[tag=getajob_scribed] run scoreboard players add @s getajob_cooldown 168000
+tag @s remove getajob_scribed
+
+execute if block ~ ~ ~ minecraft:lectern[facing=west,has_book=false] unless score @s getajob_cooldown matches 1.. run tag @s add getajob_scribed
+execute if entity @s[tag=getajob_scribed] run setblock ~ ~ ~ minecraft:lectern[facing=west,has_book=true]
+execute if entity @s[tag=getajob_scribed] run data merge block ~ ~ ~ {Book:{id:"minecraft:written_book",Count:1b,tag:{display:{Name:'{"text":"Unidentified Enchanted Book","color":"yellow","italic":false}',Lore:['{"text":"Open To Identify The Enchantment"}']},getajob_unidentifiedenchantmentbook:1b,title:"",author:"Villager",generation:3,pages:['{"text":"696969696969696969696969696969696969696969696969696969696969696969696","obfuscated":true}']}}}
+execute if entity @s[tag=getajob_scribed] run scoreboard players add @s getajob_cooldown 168000
+tag @s remove getajob_scribed
+
+execute if block ~1 ~ ~ minecraft:lectern[facing=west,has_book=false] unless score @s getajob_cooldown matches 1.. run tag @s add getajob_scribed
+execute if entity @s[tag=getajob_scribed] run setblock ~1 ~ ~ minecraft:lectern[facing=west,has_book=true]
+execute if entity @s[tag=getajob_scribed] run data merge block ~1 ~ ~ {Book:{id:"minecraft:written_book",Count:1b,tag:{display:{Name:'{"text":"Unidentified Enchanted Book","color":"yellow","italic":false}',Lore:['{"text":"Open To Identify The Enchantment"}']},getajob_unidentifiedenchantmentbook:1b,title:"",author:"Villager",generation:3,pages:['{"text":"696969696969696969696969696969696969696969696969696969696969696969696","obfuscated":true}']}}}
+execute if entity @s[tag=getajob_scribed] run scoreboard players add @s getajob_cooldown 168000
+tag @s remove getajob_scribed
+
+execute if block ~-1 ~ ~ minecraft:lectern[facing=west,has_book=false] unless score @s getajob_cooldown matches 1.. run tag @s add getajob_scribed
+execute if entity @s[tag=getajob_scribed] run setblock ~-1 ~ ~ minecraft:lectern[facing=west,has_book=true]
+execute if entity @s[tag=getajob_scribed] run data merge block ~-1 ~ ~ {Book:{id:"minecraft:written_book",Count:1b,tag:{display:{Name:'{"text":"Unidentified Enchanted Book","color":"yellow","italic":false}',Lore:['{"text":"Open To Identify The Enchantment"}']},getajob_unidentifiedenchantmentbook:1b,title:"",author:"Villager",generation:3,pages:['{"text":"696969696969696969696969696969696969696969696969696969696969696969696","obfuscated":true}']}}}
+execute if entity @s[tag=getajob_scribed] run scoreboard players add @s getajob_cooldown 168000
+tag @s remove getajob_scribed
+
+execute if block ~ ~ ~1 minecraft:lectern[facing=west,has_book=false] unless score @s getajob_cooldown matches 1.. run tag @s add getajob_scribed
+execute if entity @s[tag=getajob_scribed] run setblock ~ ~ ~1 minecraft:lectern[facing=west,has_book=true]
+execute if entity @s[tag=getajob_scribed] run data merge block ~ ~ ~1 {Book:{id:"minecraft:written_book",Count:1b,tag:{display:{Name:'{"text":"Unidentified Enchanted Book","color":"yellow","italic":false}',Lore:['{"text":"Open To Identify The Enchantment"}']},getajob_unidentifiedenchantmentbook:1b,title:"",author:"Villager",generation:3,pages:['{"text":"696969696969696969696969696969696969696969696969696969696969696969696","obfuscated":true}']}}}
+execute if entity @s[tag=getajob_scribed] run scoreboard players add @s getajob_cooldown 168000
+tag @s remove getajob_scribed
+
+execute if block ~ ~ ~-1 minecraft:lectern[facing=west,has_book=false] unless score @s getajob_cooldown matches 1.. run tag @s add getajob_scribed
+execute if entity @s[tag=getajob_scribed] run setblock ~ ~ ~-1 minecraft:lectern[facing=west,has_book=true]
 execute if entity @s[tag=getajob_scribed] run data merge block ~ ~ ~-1 {Book:{id:"minecraft:written_book",Count:1b,tag:{display:{Name:'{"text":"Unidentified Enchanted Book","color":"yellow","italic":false}',Lore:['{"text":"Open To Identify The Enchantment"}']},getajob_unidentifiedenchantmentbook:1b,title:"",author:"Villager",generation:3,pages:['{"text":"696969696969696969696969696969696969696969696969696969696969696969696","obfuscated":true}']}}}
 execute if entity @s[tag=getajob_scribed] run scoreboard players add @s getajob_cooldown 168000
 tag @s remove getajob_scribed
